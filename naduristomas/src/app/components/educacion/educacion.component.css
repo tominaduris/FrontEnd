@@ -3,7 +3,46 @@
 }
 div{
     background-color: #a1b5cb;
+    font-size: large;
 }
 h1, h3{
     display: inline;
 }
+
+@media (min-width: 576px) {#logoEP{
+    width: 100px;
+    margin-left: 22%;
+}
+#logoUNRC{
+    width: 72px;
+    padding: 5px;
+    margin-left: 30%;
+    margin-top: 13%;
+}
+
+#logoAP{
+    width: 150px;
+    margin-top: 30%;
+    margin-left: 7%;
+}}
+
+
+
+
+
+@media (max-width: 576px) {#logoEP{
+    width: 130px;
+    margin-left: 3%;
+}
+#logoUNRC{
+    width: 90px;
+    padding: 5px;
+    margin-left: 5%;
+    margin-top: 3%;
+}
+
+#logoAP{
+    width: 150px;
+    margin-top: 3%;
+    margin-left: 7%;
+}}

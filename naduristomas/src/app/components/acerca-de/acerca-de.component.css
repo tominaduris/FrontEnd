@@ -6,15 +6,16 @@ div{
     text-align: center;
 }
 
+
 /*estilo de la foto de perfil para pantallas grandes*/
-@media (min-width: 576px){
+@media (min-width: 576px) {
     #fotoperfil{
-        position: absolute;
-        width: 15%;
+        position: relative;
+        width: 100%;
         border-radius: 100%;
         box-shadow: 3px 3px 3px grey;
-        left: 3%;
-        top: 600px;
+        left: 17%;
+        top: -104px;
     }
 }
 
@@ -25,8 +26,8 @@ div{
         width: 30%;
         border-radius: 100%;
         box-shadow: 3px 3px 3px grey;
-        left: 36%;
-        top: 630px;
+        left: 35%;
+        top: 250px;
     }
 }
 
