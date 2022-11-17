@@ -4,12 +4,22 @@
 }
 .contenedor{
     width: auto;
-
 }
-.parte1, .parte2{
-    display: inline-block;
+.parte1{
+    display: inline;
     text-align: justify;
 }
-.img-proyecto{
-    box-shadow: 10px 10px 30px #000;
+
+.parte2{
+    display: inline;
+    text-align: justify;
+}
+
+.img-drone{
+    width: 400px;
+}
+
+.img-logo{
+    margin-top: 30%;
+    width: 400px;
 }
