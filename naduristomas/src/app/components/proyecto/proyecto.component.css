@@ -15,11 +15,40 @@
     text-align: justify;
 }
 
-.img-drone{
+/*.img-drone{
     width: 400px;
-}
+}*/
 
-.img-logo{
+/*.img-logo{
     margin-top: 30%;
     width: 400px;
+}*/
+
+@media (min-width: 576px) {
+#img-drone{
+    width: 300px;
+    padding: 5px;
+    margin-left: 10%;
+    margin-top: 20%;
 }
+
+#img-logo{
+    width: 150px;
+    margin-top: 30%;
+    margin-left: 7%;
+}}
+
+
+@media (max-width: 576px) {
+#img-drone{
+    width: 180px;
+    padding: 5px;
+    margin-left: 14%;
+    margin-top: 3%;
+}
+
+#img-logo{
+    width: 150px;
+    margin-top: 3%;
+    margin-left: 7%;
+}}
