@@ -1,4 +1,9 @@
 .row{
     background-color: #a1b5cb;
     padding: 5px;
+    margin-top: 1px;
 }
+h1{
+    display: inline;
+}
+

@@ -29,6 +29,12 @@ div{
         left: 35%;
         top: 250px;
     }
+    div{
+        font-size: small;
+    }
+    h5{
+        font-size: small;
+    }
 }
 
 

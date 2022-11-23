@@ -14,3 +14,35 @@ h1, h3{
 #logo1{
     width: 135px;
 }
+
+p{
+    display: inline;
+}
+
+@media (max-width: 575px){
+    .row{
+        padding: 10px;
+    }
+    div{
+        font-size: small;
+    }
+    h1, h3{
+        display: inline;
+        font-size: x-large;
+    }
+    #logos{
+        width: 100px;
+        margin-left: 10px;
+    }
+    #logo1{
+        width: 135px;
+    }
+    
+    p{
+        display: inline;
+    }
+    h5{
+        margin-right: 20px;
+        font-size: medium;
+    }
+}

@@ -39,16 +39,19 @@
 }}
 
 
-@media (max-width: 576px) {
+@media (max-width: 575px) {
 #img-drone{
-    width: 180px;
+    width: 150px;
     padding: 5px;
-    margin-left: 14%;
+    margin-left: 4%;
     margin-top: 3%;
 }
 
 #img-logo{
-    width: 150px;
-    margin-top: 3%;
+    width: 140px;
     margin-left: 7%;
-}}
+}
+div{
+    font-size: small;
+}
+}

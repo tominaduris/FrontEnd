@@ -31,18 +31,34 @@ h1, h3{
 
 
 @media (max-width: 576px) {#logoEP{
-    width: 130px;
-    margin-left: 3%;
+    width: 100px;
+    margin-left: 5%;
 }
 #logoUNRC{
-    width: 90px;
+    width: 70px;
     padding: 5px;
     margin-left: 5%;
     margin-top: 3%;
 }
 
 #logoAP{
-    width: 150px;
+    width: 130px;
     margin-top: 3%;
-    margin-left: 7%;
-}}
+    margin-left: 3%;
+}
+div{
+    font-size: small;
+}
+.row{
+    padding: 10px;
+}
+h5{
+    margin-right: 20px;
+    font-size: medium;
+    
+}
+h1, h3{
+    display: inline;
+    font-size: x-large;
+}
+}
