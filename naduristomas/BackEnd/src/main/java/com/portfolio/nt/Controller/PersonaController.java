@@ -22,7 +22,7 @@ public class PersonaController {
         return ipersonaService.getPersona();
     }
     
-    @PostMapping("/persona/crear")
+    @PostMapping("/personas/crear")
     public String createPersona(@RequestBody Persona persona){
         ipersonaService.savePersona(persona);
         return "La persona fue creada correctamente";
