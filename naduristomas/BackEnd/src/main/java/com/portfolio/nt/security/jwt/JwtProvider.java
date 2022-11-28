@@ -1,7 +1,7 @@
 
-package com.portfolio.nt.security.jwt;
+package com.portfolio.nt.Security.jwt;
 
-import com.portfolio.nt.security.Entity.UsuarioPrincipal;
+import com.portfolio.nt.Security.Entity.UsuarioPrincipal;
 import io.jsonwebtoken.ExpiredJwtException;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.MalformedJwtException;
@@ -42,22 +42,17 @@ public class JwtProvider {
         try{
             Jwts.parser().setSigningKey(secret).parseClaimsJws(token);
             return true;
-        }   catch (MalformedJwtException e){
+        }catch (MalformedJwtException e){
             logger.error("Token mal formado");
-        }
-        catch (UnsupportedJwtException e){
+        }catch (UnsupportedJwtException e){
             logger.error("Token no soportado");
-        }
-        catch (ExpiredJwtException e){
+        }catch (ExpiredJwtException e){
             logger.error("Token expirado");
-        }
-        catch (IllegalArgumentException e){
+        }catch (IllegalArgumentException e){
             logger.error("Token vacío");
-        }
-        catch (SignatureException e){
+        }catch (SignatureException e){
             logger.error("Firma no válida");
         }
-        
         return false;
     }
 }

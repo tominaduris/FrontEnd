@@ -1,15 +1,15 @@
 
-package com.portfolio.nt.security.Controller;
+package com.portfolio.nt.Security.Controller;
 
-import com.portfolio.nt.security.Dto.JwtDto;
-import com.portfolio.nt.security.Dto.LoginUsuario;
-import com.portfolio.nt.security.Dto.NuevoUsuario;
-import com.portfolio.nt.security.Entity.Rol;
-import com.portfolio.nt.security.Entity.Usuario;
-import com.portfolio.nt.security.Enums.RolNombre;
-import com.portfolio.nt.security.Service.RolService;
-import com.portfolio.nt.security.Service.UsuarioService;
-import com.portfolio.nt.security.jwt.JwtProvider;
+import com.portfolio.nt.Security.Dto.JwtDto;
+import com.portfolio.nt.Security.Dto.LoginUsuario;
+import com.portfolio.nt.Security.Dto.NuevoUsuario;
+import com.portfolio.nt.Security.Entity.Rol;
+import com.portfolio.nt.Security.Entity.Usuario;
+import com.portfolio.nt.Security.Enums.RolNombre;
+import com.portfolio.nt.Security.Service.RolService;
+import com.portfolio.nt.Security.Service.UsuarioService;
+import com.portfolio.nt.Security.jwt.JwtProvider;
 import java.util.HashSet;
 import java.util.Set;
 import javax.validation.Valid;
@@ -58,10 +58,10 @@ public class AuthController {
         Usuario usuario = new Usuario(nuevoUsuario.getNombre(), nuevoUsuario.getNombreUsuario(), nuevoUsuario.getEmail(), passwordEncoder.encode(nuevoUsuario.getPassword()));
         
         Set<Rol> roles = new HashSet<>();
-        roles.add(rolService.GetByRolNombre(RolNombre.ROLE_USER).get());
+        roles.add(rolService.getByRolNombre(RolNombre.ROLE_USER).get());
         
         if(nuevoUsuario.getRoles().contains("admin"))
-            roles.add(rolService.GetByRolNombre(RolNombre.ROLE_ADMIN).get());
+            roles.add(rolService.getByRolNombre(RolNombre.ROLE_ADMIN).get());
         usuario.setRoles(roles);
         usuarioService.save(usuario);
         

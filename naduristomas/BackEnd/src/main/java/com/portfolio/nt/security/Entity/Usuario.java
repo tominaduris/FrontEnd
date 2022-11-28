@@ -1,5 +1,5 @@
 
-package com.portfolio.nt.security.Entity;
+package com.portfolio.nt.Security.Entity;
 
 import java.util.HashSet;
 import java.util.Set;

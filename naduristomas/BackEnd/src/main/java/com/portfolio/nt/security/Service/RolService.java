@@ -1,8 +1,8 @@
-package com.portfolio.nt.security.Service;
+package com.portfolio.nt.Security.Service;
 
-import com.portfolio.nt.security.Entity.Rol;
-import com.portfolio.nt.security.Enums.RolNombre;
-import com.portfolio.nt.security.Repository.iRolRepository;
+import com.portfolio.nt.Security.Entity.Rol;
+import com.portfolio.nt.Security.Enums.RolNombre;
+import com.portfolio.nt.Security.Repository.iRolRepository;
 import java.util.Optional;
 import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +14,7 @@ public class RolService {
     @Autowired
     iRolRepository irolRepository;
     
-    public Optional<Rol> GetByRolNombre(RolNombre rolNombre){
+    public Optional<Rol> getByRolNombre(RolNombre rolNombre){
             return irolRepository.findByRolNombre(rolNombre);
     }
     

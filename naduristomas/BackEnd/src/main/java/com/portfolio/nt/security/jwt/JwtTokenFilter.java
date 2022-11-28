@@ -1,6 +1,6 @@
-package com.portfolio.nt.security.jwt;
+package com.portfolio.nt.Security.jwt;
 
-import com.portfolio.nt.security.Service.UserDetailsImpl;
+import com.portfolio.nt.Security.Service.UserDetailsImpl;
 import java.io.IOException;
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
@@ -14,7 +14,8 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.filter.OncePerRequestFilter;
 
-public class JwtTokenFilter extends OncePerRequestFilter {
+
+public class JwtTokenFilter extends OncePerRequestFilter{
 
     private final static Logger logger = LoggerFactory.getLogger(JwtProvider.class);
 
