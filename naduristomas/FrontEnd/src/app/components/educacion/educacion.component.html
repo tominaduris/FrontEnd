@@ -1,4 +1,66 @@
 <div class="row">
+    <h1>Educacion</h1>
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">
+            Nueva Educacion
+        </button>
+    </div>
+
+    <div class="col-lg-10"></div>
+    <div class="col-lg-1"></div>
+    <div class="col-lg-10">
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Educacion of educacion">
+                    <td>
+                        <h2>{{Educacion.nombreE}}</h2>
+                    </td>
+                    <td>{{Educacion.descripcionE}}</td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-light" routerLink="/editedu/{{Educacion.id}}">
+                            <i class="bi bi-pencil-fill"></i> EDITAR</button>
+                    </td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-danger" (click)="delete(Educacion.id)">
+                            <i class="bi bi-trash-fill"></i> BORRAR</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<div class="row">
     <h1>Educación</h1>
     <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
         <a href="https://www.facebook.com/profile.php?id=100057065575905"><img src="../../../assets/Escudo Escuelas Pías (1).png" class="img-fluid" id="logoEP"></a>
@@ -27,4 +89,4 @@
             <h5 style="text-align:center"><u>Para más informacion sobre las instituciones, click en el logo correspondiente.</u></h5>
         </ul>
     </div>
-</div>
+</div>-->
