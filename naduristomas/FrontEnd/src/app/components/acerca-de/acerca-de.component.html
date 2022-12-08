@@ -1,15 +1,18 @@
 <div class="row">
-    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-        <img src="../../../assets/profilePhoto.jpg" class="img-fluid" id="fotoperfil">
+        <button type="button" class="btn btn-primary" routerLink="/editacercade/1" *ngIf="isLogged">
+            Editar Perfil
+        </button>
     </div>
     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-        <h2 id="nombre">Naduris Tomás</h2>
+        <img src="{{persona.img}}" class="img-fluid" id="fotoperfil">
+    </div>
+    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+        <h2 id="nombre">{{persona.nombre}} {{persona.apellido}}</h2>
         <h3>Full Stack Developer Jr</h3>
     </div>
     <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
         <span>
             <h1><u>Acerca de mí</u></h1>
-            <h5>Soy un chico de 22 años, vivo en Río Cuarto, Córdoba, Argentina. Actualmente estoy cursando la carrera de Ingeniería Mecánica en la Universidad Nacional de Río Cuarto, también conocida como UNRC. Además, cursé #SéProgramar y #YoProgramo, para convertirme en Full Stack Web Developer Jr.</h5>
+            <h5>{{persona.descripcion}}</h5>
         </span>
     </div>
-</div>
