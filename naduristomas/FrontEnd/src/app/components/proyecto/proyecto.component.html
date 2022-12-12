@@ -1,5 +1,48 @@
 <div class="row">
     <h1>Proyectos realizados</h1>
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-dark" routerLink="/newproyecto" *ngIf="isLogged">
+            Nuevo proyecto
+        </button>
+    </div>
+
+    <div class="col lg 1"></div>
+    <div class="col-lg-11">
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Proyecto of pro">
+                    <td>
+                        <h2>{{Proyecto.nombreP}}</h2>
+                    </td>
+                    <td>{{Proyecto.descripcionP}}</td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-light" routerLink="/editpro/{{Proyecto.id}}">
+                            <i class="bi bi-pencil-fill"></i> EDITAR</button>
+                    </td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-danger" (click)="delete(Proyecto.id)">
+                            <i class="bi bi-trash-fill"></i> BORRAR</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<div class="row">
+    <h1>Proyectos realizados</h1>
     <div class="col-lg-1">
         <a><img src="../../../assets/—Pngtree—blue agricultural drone_6747835.png" class="img-fluid" id="img-drone"></a>
         <a><img src="../../../assets/APLogo.png" class="img-fluid" id="img-logo"></a>
@@ -23,4 +66,4 @@
             <p>Diseño de una pagina web personal (Front-End y Back-End), implementando todos los contenidos aprendidos en el curso Argentina Programa.</p>
         </div>
     </div>
-</div>
+</div>-->
