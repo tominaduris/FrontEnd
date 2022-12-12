@@ -1,1 +1,490 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+html {
+    scroll-behavior:smooth;
+  }
+
+.noscroll{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+header{
+    font-family: 'Roboto', sans-serif;
+}
+
+nav{
+    background: linear-gradient(to bottom, rgb(30, 32, 32),rgb(56, 56, 56));
+    box-shadow:  1px 2px 5px rgba(0, 0, 0, 0.200);
+}
+
+nav .btn-light{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: rgb(58, 58, 57);
+}
+
+.navbar{
+    padding:5px;
+    margin: 0;
+    height: 80px;
+}
+
+
+.logo{
+    transition: 0.7s;
+    width:130px;
+    margin: 0 auto;
+}
+
+.logo:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+div .socials i{
+    padding: 5px;
+    color: rgb(230, 222, 222);
+    font-size: 20px;
+    transition: 0.5s;
+
+}
+
+div .socials .fa-link{
+    color:#a0a0a0;
+    
+}
+
+
+div .socials i:hover{
+    color: rgba(230, 222, 222, 0.678);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+div .socials{
+   margin: auto;
+   margin-right: 20px;
+}
+
+.banner{
+    background-image: url(https://images.unsplash.com/photo-1526374870839-e155464bb9b2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.30);
+    background-blend-mode: darken;
+    height:70vh;
+    box-shadow:  1px 20px 30px rgba(0, 0, 0, 0.671);
+    text-align: center;
+}
+
+#welcome-msg{
+    color: #ffffff;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#welcome-msg h2{
+    text-align: center;
+    display: block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 4px solid;
+    margin: 0 auto;
+    width: 28ch;
+
+    animation: typing 3s steps(28),
+    blink .5s infinite step-end alternate;
+     overflow:hidden;
+}
+
+@keyframes typing{
+    from { width: 0;}
+}
+
+@keyframes blink{
+    50% { border-color: transparent;}
+}
+
+.profilepic {
+    border-radius: 100vh;
+    width: 260px;
+    height: 245px;
+    margin-top: -10vh;
+    margin-left:10vh;
+}
+
+.info-profile{
+    padding: 3vh;
+}
+.info-profile h2 a{
+    font-size: 20px;
+    color: rgb(101, 105, 109);
+    transition: 0.3s;
+}
+
+.info-profile h2 a:hover{
+    cursor: pointer;
+    color: #858585;
+    transition: 0.3s;
+}
+#position{
+    font-weight: 400;
+    font-size: 2.2vh;
+}
+
+.info-section {
+    
+    margin-top:2vh;
+}
+
+.about .container{
+    padding:5vh;
+}
+
+
+.info-section  img{
+    width: 60%;
+}
+
+.delete-cert{
+    padding: 10px;
+    color: rgb(101, 105, 109);
+    z-index: 10;
+    position: absolute;
+    transition: 0.3s;
+}
+
+.delete-cert:hover{
+    cursor: pointer;
+    color: #858585;
+    transition: 0.3s;
+}
+
+.info-section .img{
+    display: flex;
+    margin: auto ;
+    justify-content: center;
+}
+
+.info-section .container{
+    padding: 4vh;
+}
+
+.info-section .row{
+    padding: 1vh;
+    margin: 20px;
+    border:1px solid rgba(136, 136, 136, 0.411);
+    border-radius: 3vh;
+    transition: 0.4s;
+}
+.info-section .row:hover{
+    box-shadow:  1px 5px 5px rgba(109, 108, 108, 0.671);
+}
+
+
+.picsum-img-wrapper{
+    margin:0;
+}
+.title-section{
+    text-align: center;
+    padding: 2vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+}
+
+.period{
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+}
+.header h4{
+    color: #757575;
+}
+.section{
+    
+    border-radius: 5vh;
+    margin: 10px;
+    text-align: center;
+    
+}
+
+footer{
+    background: linear-gradient(to bottom, rgb(30, 32, 32),rgb(56, 56, 56));
+    height: 30vh;
+    margin-top:5vh;
+
+    box-shadow: 0 -10px 20px rgba(0,0,0,0.5);
+
+}
+
+footer p{
+    text-align: center;
+    position: relative;
+    top: 15vh;
+    color: azure;
+    font-family: 'Roboto', sans-serif;
+}
+
+#scroll{
+    height: 400px;
+	border: 1px solid #ddd;
+	background: #f1f1f1;
+	overflow-y: scroll;
+    overflow-x:hidden;
+    margin-bottom: 50px;
+}
+
+
+.cont-img{
+   align-items: center;
+   display: flex;
+}
+
+
+.card{
+    padding: 2vh;
+    margin-top:10px;
+}
+
+#modal::backdrop{
+    background-color: rgba(0, 0, 0, 0.521);
+}
+
+#modal{
+    border: none;
+    border-radius: 10px;
+    max-width: 80ch;
+    margin: auto;
+}
+
+#login-modal{
+    border: none;
+    border-radius: 10px;
+    max-width: 40ch;
+    margin: auto;
+}
+
+.form-group{
+    width: 100%;
+    padding: 10px;
+}
+
+
+.form-group label {
+    color: rgb(63, 63, 63);
+}
+
+
+.form-input{
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.btn-container{
+   display: flex;
+   align-items:center;
+   justify-content: center;
+}
+
+.btn-container-modal{
+    text-align: center;
+}
+
+#login-title{
+    font-size: 22px;
+  
+}
+
+#login-description{
+    font-size: 0.8em;
+    color: rgb(97, 97, 97);
+}
+
+.form-header h2, button{
+    display: inline;
+}
+
+#btn-login-close{
+    background-color: #ffffff;
+    border:none;
+    
+}
+
+.card-text{
+    font-size: 1.6vh;
+    text-align: start;
+    font-family: 'Roboto', sans-serif;
+}
+
+.icons-edit{
+    text-align: end;
+}
+
+.icons-edit a{
+    color: rgb(101, 105, 109);
+    transition: 0.3s;
+}
+
+.icons-edit a:hover{
+    cursor: pointer;
+    color: #858585;
+    transition: 0.3s;
+}
+
+.icons-edit i{
+    color: rgb(101, 105, 109);
+    transition: 0.3s;
+}
+
+.icons-edit i:hover{
+    cursor: pointer;
+    color: #858585;
+    transition: 0.3s;
+}
+
+
+.item-progress{
+    padding: 20px;
+}
+
+.item-progress img{
+    width: 30px;
+    transition: 0.4s;
+}
+
+.item-progress img:hover{
+    width: 35px;
+    transition: 0.4s;
+}
+
+.container-pen{
+    text-align: end; 
+    width: 90%;
+}
+
+
+
+.progress{
+    box-shadow:  1px 0.4px 4px rgba(0, 0, 0, 0.671);
+}
+
+.header h4, a{
+    display: inline;
+}
+
+.header h2{
+    display: inline;
+}
+
+.header a{
+    font-size:20px;
+    float: right;
+}
+
+.header a:hover{
+    cursor: pointer;
+}
+
+.header{
+    padding:10px;
+}
+
+.header a i{
+    color: #858585;
+}
+
+.no-info-message{
+    text-align: center;
+}
+
+/* Extra small devices (phones, 480px and down) */
+@media only screen and (max-width: 480px) {
+    h5 {
+        font-size: 14px;
+    }
+
+    .profilepic{
+        width:230px;
+        height: 220px;
+    }
+
+    .about-section{
+        margin:0;
+    }
+
+    #welcome-msg h2{
+        font-size: 20px;
+    }
+
+    .about p {
+        font-size: 14px;
+    }
+
+    .item-progress h5{
+        font-size:15px;
+    }
+    .work-description{
+        font-size: 13px;
+    }
+}
+/* Small devices (portrait tablets and large phones, 481px and 768px) */
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+    .logo{display: none;}
+    .info-profile{
+        text-align: center;
+    }
+    .banner{
+        background-attachment: initial;
+    }
+  
+}
+/* Medium devices (landscape tablets, 768px and 1024px) */
+@media only screen and (min-width: 480px) and (max-width: 600px){
+    .about-section{
+        margin:0;
+    }
+
+    .profilepic{
+        width: 360px;
+        height: 340px;
+    }
+
+}
+
+@media only screen and (max-width: 300px){
+    #welcome-msg h2{
+        font-size: 14px;
+    }
+
+    #btn-logout{
+
+        font-size: 11px;
+    }
+
+    .profilepic{
+        width: 145px;
+        height: 130px;
+    }
+
+    .info-profile h2{
+        font-size: 20px;
+    }
+
+    .info-profile a{
+        font-size: 12px;
+    }
+
+    .about p{
+        font-size: 12px;
+    }
+}
+
+/* Largue devices ( landscape desktop, 1025px and 1200px) */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
