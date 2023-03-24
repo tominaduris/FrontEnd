@@ -1,5 +1,5 @@
 <div class="row">
-    <h1>Proyectos realizados</h1>
+    <h1><u>Proyectos realizados</u></h1>
     <div class="col-lg-2">
         <button type="button" class="btn btn-dark" routerLink="/newproyecto" *ngIf="isLogged">
             Nuevo proyecto
@@ -11,8 +11,11 @@
         <table class="table">
             <tbody>
                 <tr *ngFor="let Proyecto of pro">
+                    <img [src]="Proyecto.imagen" id="imagen">
                     <td>
                         <h2>{{Proyecto.nombreP}}</h2>
+                        <h3>{{Proyecto.inicio}} </h3>
+                        <h3>- {{Proyecto.fin}}</h3>
                     </td>
                     <td>{{Proyecto.descripcionP}}</td>
                     <td *ngIf="isLogged">

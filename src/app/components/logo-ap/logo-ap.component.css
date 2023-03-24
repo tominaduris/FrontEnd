@@ -7,6 +7,11 @@
 
 .redes{
     margin-right: 0.5em;
+    display: flex;
+}
+
+.logo{
+    width: 1600px;
 }
 
 #logoAP{
@@ -18,7 +23,7 @@ img{
 
 .btn{
     border-width: medium;
-    margin-left: 10px;
+    margin-right: 10px;
 }
 
 /** para vista de celu**/
@@ -30,13 +35,17 @@ img{
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin-left: 15%;
+        margin-left: 1%;
+        margin-top: -6%;
     }
     .logo{
-        margin-left: -50%;
+        margin-left: 0%;
+        display: flex;
     }
     .btn{
-        margin-top: -135px;
-        margin-right: -50px;
+        margin-top: -170px;
+        margin-left: 303px;
+        width: 20%;
+        height: 240%;
     }
 }

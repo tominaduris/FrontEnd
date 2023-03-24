@@ -1,19 +1,29 @@
-<div class="container">
-    <div class="row">
-        <div>
-            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
-                <div class="form-group">
-                    <label for="nombreE">Nueva Skill</label>
-                    <input type="text" class="form-control" id="nombreE" name="nombreE" [(ngModel)]="nombre" required>
-                </div>
-                <div class="form-group">
-                    <label for="descripcionE">Porcentaje</label>
-                    <input type="text" class="form-control" id="porcentaje" name="porcentaje" [(ngModel)]="porcentaje" required>
-                </div>
-                <button class="btn btn-secondary">
-                    Agregar Skill
-                </button>
-            </form>
-        </div>
+
+
+<div id="container">
+    <h1>&bull; Hard & Soft skills &bull;</h1>
+    <div class="underline">
     </div>
-</div>
+    <form action="#" method="post" id="contact_form" (ngSubmit)="onCreate()" novalidate #f="ngForm">
+      <div class="nombre">
+        <label for="nombre"></label>
+        <input type="text" placeholder="Nombre de la skill" name="nombre" id="nombre" [(ngModel)]="nombre" required>
+      </div>
+      
+      <div class="imagen">
+        <label for="nombre"></label>
+        <input type="text" placeholder="Imagen de la skill (url cloudinary)" name="imagen" id="imagen" [(ngModel)]="imagen" required>
+      </div>
+      <div class="porcentaje">
+        <label for="porcentaje"></label>
+        <input type="text" placeholder="Porcentaje de la skill" name="porcentaje" id="porcentaje" [(ngModel)]="porcentaje" required>
+      </div>
+      <div class="porcentaje">
+        <label for="porcentaje"></label>
+        <input type="text" placeholder="Color del circulo (en ingles o codigo con #)" name="color" id="color" [(ngModel)]="color" required>
+      </div>
+      <div class="submit">
+        <input type="submit" value="Actualizar" id="form_button" />
+      </div>
+    </form>
+  </div>

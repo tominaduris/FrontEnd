@@ -1,4 +1,4 @@
-<div class="container">
+<!--<div class="container">
     <div class="row">
         <div>
             <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
@@ -10,10 +10,56 @@
                     <label for="descripcionE">Descripcion de la tarea</label>
                     <input type="text" class="form-control" id="descripcionE" name="descripcionE" [(ngModel)]="descripcionE" required>
                 </div>
+                <div class="form-group">
+                    <label for="imagen">Imagen de la experiencia (URL de cloudinary)</label>
+                    <input type="text" class="form-control" id="imagen" name="imagen" [(ngModel)]="imagen" required>
+                </div>
+                <div class="form-group">
+                    <label for="inicio">Inicio</label>
+                    <input type="text" class="form-control" id="inicio" name="inicio" [(ngModel)]="inicio" required>
+                </div>
+                <div class="form-group">
+                    <label for="fin">Fin</label>
+                    <input type="text" class="form-control" id="fin" name="fin" [(ngModel)]="fin" required>
+                </div>
                 <button class="btn btn-primary">
                     Agregar experiencia
                 </button>
             </form>
         </div>
     </div>
-</div>
+</div>-->
+
+
+
+<div id="container">
+    <h1>&bull; Experiencia &bull;</h1>
+    <div class="underline">
+    </div>
+    <form action="#" method="post" id="contact_form" (ngSubmit)="onCreate()" novalidate #f="ngForm">
+      <div class="nombreE">
+        <label for="nombreE"></label>
+        <input type="text" placeholder="Nombre de la institucion" name="nombreE" id="nombreE" [(ngModel)]="nombreE" required>
+      </div>
+      
+      <div class="inicio">
+        <label for="nombre"></label>
+        <input type="text" placeholder="Año de inicio" name="inicio" id="inicio" [(ngModel)]="inicio" required>
+      </div>
+      <div class="fin">
+        <label for="nombre"></label>
+        <input type="text" placeholder="Año de Finalizacion" name="fin" id="fin" [(ngModel)]="fin" required>
+      </div>
+      <div class="imagen">
+        <label for="nombre"></label>
+        <input type="text" placeholder="Imagen de la experiencia (url cloudinary)" name="imagen" id="imagen" [(ngModel)]="imagen" required>
+      </div>
+      <div class="descripcionE">
+        <label for="descripcionE"></label>
+        <textarea name="descripcionE" placeholder="Descripcion del trabajo" id="descripcionE" cols="30" rows="5" [(ngModel)]="descripcionE" required></textarea>
+      </div>
+      <div class="submit">
+        <input type="submit" value="Agregar experiencia" id="form_button" />
+      </div>
+    </form>
+  </div>

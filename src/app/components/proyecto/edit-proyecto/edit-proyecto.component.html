@@ -1,19 +1,33 @@
-<div class="container" *ngIf="pro">
-    <div class="row">
-        <div>
-            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
-                <div class="form-group">
-                    <label for="nombreP">Nombre del Proyecto</label>
-                    <input type="text" class="form-control" id="nombreP" name="nombreP" [(ngModel)]="pro.nombreP" required>
-                </div>
-                <div class="form-group">
-                    <label for="descripcionP">Descripcion de la tarea</label>
-                    <input type="text" class="form-control" id="descripcionP" name="descripcionP" [(ngModel)]="pro.descripcionP" required>
-                </div>
-                <button class="btn btn-primary">
-                    Actualizar
-                </button>
-            </form>
-        </div>
+
+
+<div id="container">
+    <h1>&bull; Proyecto &bull;</h1>
+    <div class="underline">
     </div>
-</div>
+    <form action="#" method="post" id="contact_form" (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+      <div class="nombreP">
+        <label for="nombreP"></label>
+        <input type="text" placeholder="Nombre del proyecto" name="nombreP" id="nombreP" [(ngModel)]="pro.nombreP" required>
+      </div>
+      
+      <div class="inicio">
+        <label for="nombre"></label>
+        <input type="text" placeholder="Año de inicio" name="inicio" id="inicio" [(ngModel)]="pro.inicio" required>
+      </div>
+      <div class="fin">
+        <label for="nombre"></label>
+        <input type="text" placeholder="Año de Finalizacion" name="fin" id="fin" [(ngModel)]="pro.fin" required>
+      </div>
+      <div class="imagen">
+        <label for="nombre"></label>
+        <input type="text" placeholder="Imagen del proyecto (url cloudinary)" name="imagen" id="imagen" [(ngModel)]="pro.imagen" required>
+      </div>
+      <div class="descripcionP">
+        <label for="descripcionP"></label>
+        <textarea name="descripcionP" placeholder="Descripcion del proyecto" id="descripcionP" cols="30" rows="5" [(ngModel)]="pro.descripcionP" required></textarea>
+      </div>
+      <div class="submit">
+        <input type="submit" value="Actualizar" id="form_button" />
+      </div>
+    </form>
+  </div>

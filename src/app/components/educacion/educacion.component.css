@@ -8,57 +8,47 @@ div{
 h1, h3{
     display: inline;
 }
-
-@media (min-width: 576px) {#logoEP{
-    width: 100px;
-    margin-left: 22%;
-}
-#logoUNRC{
-    width: 72px;
-    padding: 5px;
-    margin-left: 30%;
-    margin-top: 13%;
+#imagen{
+    height: 150px;
+    margin-left: -150px;
 }
 
-#logoAP{
-    width: 150px;
-    margin-top: 30%;
-    margin-left: 7%;
-}}
 
 
 
 
 
-@media (max-width: 576px) {#logoEP{
-    width: 100px;
-    margin-left: 5%;
+
+@media (max-width: 576px) {
+
+table {
+    width:100%;
 }
-#logoUNRC{
-    width: 70px;
-    padding: 5px;
-    margin-left: 5%;
-    margin-top: 3%;
+thead {
+    display: none;
+}
+tr:nth-of-type(2n) {
+    background-color: inherit;
+}
+tr td:first-child {
+    background: #f0f0f0;
+    font-weight:bold;
+    font-size:1.3em;
+}
+tbody td {
+    display: block;
+    text-align:center;
+}
+tbody td:before {
+    content: attr(data-th);
+    display: block;
+    text-align:center;
+}
+#imagen{
+    position: relative;
+    width: 180px;
+    height: auto;
+    margin-left: 90px;
 }
 
-#logoAP{
-    width: 130px;
-    margin-top: 3%;
-    margin-left: 3%;
-}
-div{
-    font-size: small;
-}
-.row{
-    padding: 10px;
-}
-h5{
-    margin-right: 20px;
-    font-size: medium;
-    
-}
-h1, h3{
-    display: inline;
-    font-size: x-large;
-}
 }

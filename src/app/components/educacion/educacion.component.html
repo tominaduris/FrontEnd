@@ -1,5 +1,5 @@
 <div class="row">
-    <h1>Educacion</h1>
+    <h1><u>Educacion</u></h1>
     <div class="col-lg-2">
         <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">
             Nueva Educacion
@@ -12,10 +12,16 @@
         <table class="table">
             <tbody>
                 <tr *ngFor="let Educacion of educacion">
+                    <img [src]="Educacion.imagen" id="imagen">
                     <td>
                         <h2>{{Educacion.nombreE}}</h2>
+                        <h3>{{Educacion.inicio}} </h3>
+                        <h3>- {{Educacion.fin}}</h3>
                     </td>
-                    <td>{{Educacion.descripcionE}}</td>
+                    <td>
+                        <h5>{{Educacion.descripcionE}}</h5>
+                    </td>
+                    
                     <td *ngIf="isLogged">
                         <button class="btn btn-light" routerLink="/editedu/{{Educacion.id}}">
                             <i class="bi bi-pencil-fill"></i> EDITAR</button>
@@ -60,33 +66,3 @@
 
 
 
-<!--<div class="row">
-    <h1>Educación</h1>
-    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
-        <a href="https://www.facebook.com/profile.php?id=100057065575905"><img src="../../../assets/Escudo Escuelas Pías (1).png" class="img-fluid" id="logoEP"></a>
-        <a href="https://www.unrc.edu.ar/"><img src="../../../assets/universidad-nacional-de-rio-cuarto-logo-C2FB507F8E-seeklogo.com.png"   class="img-fluid" id="logoUNRC"></a>
-        <a><img src="../../../assets/APLogo.png" class="img-fluid" id="logoAP"></a> 
-    </div>
-    <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
-        <ul>
-            <li>
-                <h1>Bachiller en ciencia naturales</h1> - <h3>(3 años)</h3>
-            </li>
-            <p>Título obtenido en el colegio Escuelas Pías de Río Cuarto, cursado desde 2016 hasta finales de 2018.</p>
-        </ul>
-        <br>
-        <ul>
-            <li>
-                <h1>Ingeniería Mecánica</h1> - <h3>(4 años) (en curso)</h3>
-            </li>
-            <p>Actualmente cursando la carrera de Ingeniería Mecánica en la Universidad Nacional de Río Cuarto (UNRC). Año de ingreso: 2019.</p>
-        <br>
-            <li>
-                <h1>Argentina Programa</h1> - <h3>(9 meses)</h3>
-            </li>
-            <p>Curso sobre programación, contenido en dos etapas; la primera, introductoria al mundo de la programación; y la segunda, una profundizacion de lo aprendido, y dedicada al desarrollo de páginas web, tanto en Front-End, como Back-End. Los lenguajes mas desarrollados son HTML y JavaScript. También se aprenden diferentes herramientas de desarrollador, como por ejemplo, herramientas de busqueda, Time Boxing, Scrum, entre otras. Además, aprendemos a usar github, bases de datos, DevOps y mucho mas. </p>
-            <br>
-            <h5 style="text-align:center"><u>Para más informacion sobre las instituciones, click en el logo correspondiente.</u></h5>
-        </ul>
-    </div>
-</div>-->

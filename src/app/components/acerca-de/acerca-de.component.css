@@ -1,21 +1,49 @@
 .row{
     padding: 20px;
-}
-div{
-    background-color: #a1b5cb;
-    text-align: center;
+    background-color: #a1b5cb;   
 }
 
+div{
+    background-color: #a1b5cb;
+    padding: 2px;
+}
+
+#descripcion{
+    text-align: center;
+    margin-right: 150px;
+}
+p{
+    width: 1300px;
+    font-size: large;
+}
+#nombre{
+    position: relative;
+    text-align: left;
+    background-color: #a1b5cb;
+    padding: 2px;
+}
+#titulo{
+    position: relative;
+    text-align: left;
+    background-color: #a1b5cb;
+    padding: 2px;
+}
+h2{
+    margin-left: 50px;
+}
+h3{
+    margin-left: 20px;
+}
 
 /*estilo de la foto de perfil para pantallas grandes*/
 @media (min-width: 576px) {
     #fotoperfil{
-        position: relative;
-        width: 100%;
+        width: 40%;
         border-radius: 100%;
         box-shadow: 3px 3px 3px grey;
-        left: 17%;
-        top: -104px;
+        margin-left: 60px;
+        display: flex;
+        float: left;
     }
 }
 
@@ -26,8 +54,29 @@ div{
         width: 30%;
         border-radius: 100%;
         box-shadow: 3px 3px 3px grey;
-        left: 35%;
-        top: 250px;
+        left: 10px;
+        top: 323px;
+    }
+    #descripcion{
+        margin-top: 100px;
+        width: 410px;
+    }
+    p{
+      width: 400px;
+      text-align: center;
+      height: 110px;
+    }
+    #nombre{
+        position: absolute;
+        text-align: center;
+        margin-left: 150px;
+        margin-top: -305px;
+    }
+    #titulo{
+        position: absolute;
+        text-align: center;
+        margin-left: 143px;
+        margin-top: -260px;
     }
     div{
         font-size: small;
@@ -41,10 +90,5 @@ div{
 
 
 
-/*etiqueta nombre*/
-#nombre{
-    font-weight: bold;
-    margin-top: 29%;
-    
-}
+
 

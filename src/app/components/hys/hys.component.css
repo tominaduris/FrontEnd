@@ -9,6 +9,15 @@ h1{
 
 .circulo{
     display: flex;
+    margin-top: 10px;
     flex-direction: column;
     align-items: center;
+}
+
+@media(max-width: 575px) {
+    .circulo{
+        width:200px;
+        height: 270px;
+    }
+    
 }

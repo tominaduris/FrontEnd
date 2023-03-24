@@ -1,19 +1,34 @@
-<div class="container">
-    <div class="row">
-        <div>
-            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
-                <div class="form-group">
-                    <label for="nombreP">Nombre del proyecto</label>
-                    <input type="text" class="form-control" id="nombreP" name="nombreP" [(ngModel)]="nombreP" required>
-                </div>
-                <div class="form-group">
-                    <label for="descripcionP">Descripcion del proyecto</label>
-                    <input type="text" class="form-control" id="descripcionP" name="descripcionP" [(ngModel)]="descripcionP" required>
-                </div>
-                <button class="btn btn-primary">
-                    Agregar proyecto
-                </button>
-            </form>
-        </div>
+
+
+
+<div id="container">
+    <h1>&bull; Proyecto &bull;</h1>
+    <div class="underline">
     </div>
-</div>
+    <form action="#" method="post" id="contact_form" (ngSubmit)="onCreate()" novalidate #f="ngForm">
+      <div class="nombreP">
+        <label for="nombreP"></label>
+        <input type="text" placeholder="Nombre del proyecto" name="nombreP" id="nombreP" [(ngModel)]="nombreP" required>
+      </div>
+      
+      <div class="inicio">
+        <label for="nombre"></label>
+        <input type="text" placeholder="Año de inicio" name="inicio" id="inicio" [(ngModel)]="inicio" required>
+      </div>
+      <div class="fin">
+        <label for="nombre"></label>
+        <input type="text" placeholder="Año de Finalizacion" name="fin" id="fin" [(ngModel)]="fin" required>
+      </div>
+      <div class="imagen">
+        <label for="nombre"></label>
+        <input type="text" placeholder="Imagen del proyecto (url cloudinary)" name="imagen" id="imagen" [(ngModel)]="imagen" required>
+      </div>
+      <div class="descripcionP">
+        <label for="descripcionP"></label>
+        <textarea name="descripcionP" placeholder="Descripcion del proyecto" id="descripcionP" cols="30" rows="5" [(ngModel)]="descripcionP" required></textarea>
+      </div>
+      <div class="submit">
+        <input type="submit" value="Agregar proyecto" id="form_button" />
+      </div>
+    </form>
+  </div>

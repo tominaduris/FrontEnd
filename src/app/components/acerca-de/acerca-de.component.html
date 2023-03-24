@@ -3,16 +3,35 @@
             Editar Perfil
         </button>
     </div>
-    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-        <img src="{{persona.img}}" class="img-fluid" id="fotoperfil">
-    </div>
-    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+    <!--<div class="col-xs-12 col-sm-8 col-md-4 col-lg-4" id="fotoynombre">
+        <img src="../../../assets/grid_landscape.jpg" id="fotoperfil">
         <h2 id="nombre">{{persona.nombre}} {{persona.apellido}}</h2>
         <h3>Full Stack Developer Jr</h3>
     </div>
-    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+    <div class="col-xs-12 col-sm-8 col-md-12 col-lg-6" id="descripcion">
         <span>
             <h1><u>Acerca de mí</u></h1>
             <h5>{{persona.descripcion}}</h5>
         </span>
+    </div>-->
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <table class="table">
+            <tbody>
+                <img src="../../../assets/grid_landscape.jpg" id="fotoperfil">
+                <td>
+                <span >
+                    <h1 id="descripcion"><u>Acerca de mí</u></h1>
+                    <p>{{persona.descripcion}}</p>
+                </span>
+                </td>
+            </tbody>
+        </table>
     </div>
+    <div id="nombre">
+        <h2>{{persona.nombre}} {{persona.apellido}}</h2>
+    </div>
+    <div id="titulo">
+        <h3>Full Stack Developer Jr</h3>
+    </div>
+    
+   

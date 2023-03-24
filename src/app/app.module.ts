@@ -29,6 +29,7 @@ import { NewSkillComponent } from './components/hys/new-skill/new-skill.componen
 import { EditAcercaDeComponent } from './components/acerca-de/edit-acerca-de/edit-acerca-de.component';
 import { NewProyectoComponent } from './components/proyecto/new-proyecto/new-proyecto.component';
 import { EditProyectoComponent } from './components/proyecto/edit-proyecto/edit-proyecto.component';
+import { MatButtonModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,7 @@ import { EditProyectoComponent } from './components/proyecto/edit-proyecto/edit-
     NewSkillComponent,
     EditAcercaDeComponent,
     NewProyectoComponent,
-    EditProyectoComponent
+    EditProyectoComponent,
   ],
   imports: [
     FormsModule,
