@@ -10,7 +10,7 @@ import { NuevoUsuario } from '../model/nuevo-usuario';
   providedIn: 'root'
 })
 export class AuthService {
-  authURL = environment.URL + '/auth/';
+  authURL =  environment.URL + '/auth/';
 
   constructor(private httpClient: HttpClient) { }
 

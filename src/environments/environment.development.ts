@@ -1,5 +1,5 @@
 export const environment = {
-    production: false,
-
-  URL: 'https://frontend-20535.web.app',
+    production: true,
+    URL: 'https://oral-carlye-tominadurisyhdkoc3ige.koyeb.app',
+  //URL: 'https://frontend-20535.web.app',
 };
